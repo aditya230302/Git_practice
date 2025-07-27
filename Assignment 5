@@ -1,0 +1,39 @@
+# Init & Create Master
+  221  cd Assignment_5
+  222  git init
+  223  echo "This is M1.txt in master (Assignment 5)" > M1.txt
+  224  git add M1.txt
+  225  git commit -m "add M1.txt on master (Assignment 5)"
+  226  git remote add origin https://github.com/aditya230302/Git_practice.git
+  227  git pull origin master --allow-unrelated-histories
+  228  git push -u origin master
+# Create Feature Branch & Add f1.txt
+  230  git checkout -b Feature
+  231  echo "This is f1.txt in Feature branch" > f1.txt
+  232  git add f1.txt
+  233  git commit -m "Add f1.txt in Feature branch"
+  234  git push -u origin Feature
+# Create feature2 Branch from Feature
+  235  git checkout -b feature2
+  236  echo "This is feature2 branch" > feature2.txt
+  237  git add feature2.txt
+  238  git commit -m "Add feature2.txt in feature2 branch"
+  239  git push -u origin feature2
+# Create Hotfix Branch from feature2
+  240  git checkout -b hotfix
+  241  echo "Urgent fix file" > urgent.txt
+  242  git add urgent.txt
+  243  git commit -m "Add urgent.txt in hotfix branch"
+  244  git push -u origin hotfix
+# Merge Feature into master
+  246  git checkout master
+  247  git pull origin master --allow-unrelated-histories
+  248  git merge Feature -m "Merge Feature into master"
+  249  git push origin master
+# Merge feature2 into master
+  251  git merge feature2 -m "Merge feature2 into master"
+  252  git push origin master
+# Merge hotfix into master
+  254  git merge hotfix -m "Merge hotfix into master"
+  255  git push origin master
+  256  history
