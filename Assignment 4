@@ -1,0 +1,38 @@
+  128  mkdir Assignment_4
+  129  cd Assignment_4
+  130  git init
+  131  echo "This is master file" > master.txt
+  134  git add master.txt
+  135  git commit -m "Add master.txt on master (assignment 4)"
+  136  git branch public1
+  137  git branch public2
+  138  git branch private
+  139  git checkout public1
+  140  echo "This is public1 file in assignment 4" > public1.txt
+  141  git add public1.txt
+  142  git commit -m "add public1.txt on public1 branch (Assignment 4)"
+  143  git checkout master
+  144  git merge public -m "Merge public1 into master (Assignment 4)"
+  145  git merge public1 -m "Merge public1 into master (Assignment 4)"
+  146  git merge public2 -m "Merge public2 into master (Assignment 4)"
+  147  git checkout private
+  148  echo "This is updated master file in private branch (Assignment 4)" > master.txt
+  149  git add master.txt
+  150  git commit -m "Edit master.txt in private branch (Assignment 4)"
+  151  git checkout public1
+  152  git merge private -m "Update public1 with new code from private (Assignment 4)"
+  153  git checkout public2
+  154  git merge private -m "Update public2 with new code from private (Assignment 4)"
+  155  git checkout master
+  156  git merge private -m "Update master with new code from private (Assignment 4)"
+  157  git checkout private
+  158  git merge master -m "Update private with all latest code from master (Assignment 4)"
+  159  git remote add origin https://github.com/aditya230302/Git_practice.git
+  160  git remote -v
+  161  git checkout master
+  162  git pull origin master --allow-unrelated-histories
+  163  git push -u origin master
+  164  git push -u origin public1
+  165  git push -u origin public2
+  166  git push -u origin private
+  167  history
