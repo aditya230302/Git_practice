@@ -1,0 +1,28 @@
+   44  cd D:/
+   45  cd 'Data Science (Py, ML, DL, AI)'
+   46  cd GIT
+   47  mkdir Assignment_2
+   48  cd Assignment_2
+   49  nano feature1.txt
+   50  nano feature2.txt
+   51  git init
+   52  git add .
+   53  git status
+   54  git commit -m "Add feature1.txt and feature2.txt"
+   55  git branch develop
+   56  git branch feature1
+   57  git branch feature2
+   58  git checkout develop
+   59  nano develop.txt
+   60  git stash
+   61  git checkout feature1
+   62  nano new.txt
+   63  git add new.txt
+   64  git commit -m "Added new.txt in feature1 branch"
+   65  git status
+   66  git checkout develop
+   67  git stash pop
+   68  git status
+   69  git add develop.txt
+   70  git commit -m "Added develop.txt"
+   71  history

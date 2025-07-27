@@ -1,0 +1,36 @@
+   81  cd ..
+   82  mkdir Assignment_3
+   83  cd Assignment_3
+   84  git init
+   85  git remote add origin https://github.com/aditya230302/Git_practice.git
+   86  git remote -v
+   87  nano main.txt
+   88  git add main.txt
+   89  git commit -m "Add main.txt in master"
+   90  git branch Develop
+   91  git branch F1
+   92  git branch F2
+   98  git branch f2
+   99  git branch
+  100  git checkout Develop
+  101  nano develop.txt
+  102  git add develop.txt
+  103  git commit -m "Add develop.txt in Develop branch"
+  104  git checkout F1
+  105  nano f1.txt
+  106  git add f1.txt
+  107  git commit -m "Add f1.txt in F1 branch"
+  108  git checkout f2
+  109  nano f2.txt
+  110  git add f2.txt
+  111  git commit -m "Add f2.txt in f2 branch"
+  114  git push --all origin
+  115  git push origin master
+  116  git checkout master
+  117  git pull origin master --allow-unrelated-histories
+  118  git commit -m "Merge remote master into local master"
+  119  git push origin master
+  120  git branch -d f2
+  121  git branch -D f2
+  122  git push origin --delete f2
+  123  history

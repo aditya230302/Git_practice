@@ -1,0 +1,36 @@
+    1  git config --global user.email "adityavandu@gmail.com"
+    2  git config --global user.name "Aditya"
+    3  git config --global user.email
+    4  git config user.email
+    5  git config --list
+    6  clear
+    7  ls
+    8  cd desktop
+    9  cd D:\Data Science (Py, ML, DL, AI)\GIT~
+   10  cd D:\Data Science (Py, ML, DL, AI)\GIT
+   11  cd D:
+   12  ls
+   13  cd D:\'Data Science (Py, ML, DL, AI)'
+   14  cd D:/Data Science (Py, ML, DL, AI)/
+   15  cd D:\Data Science (Py, ML, DL, AI)\
+   16  cd Data Science (Py, ML, DL, AI)
+   17  cd 'Data Science (Py, ML, DL, AI)'
+   18  ls
+   19  cd GIT
+   20  clear
+   21  mkdir Assignment_1
+   22  cd Assignment_1
+   23  touch Code.txt
+   24  touch Log.txt
+   25  touch Output.txt
+   26  ls
+   27  git init
+   28  git status
+   29  git add Code.txt
+   30  git add Output.txt
+   31  git status
+   32  git commit -m "I am commiting two files"
+   33  git remote add origin https://github.com/aditya230302/Git_practice.git
+   34  git remote -v
+   35  git push -u origin master
+   36  history
